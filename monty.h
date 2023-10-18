@@ -58,14 +58,14 @@ char *buffer;
 typedef struct instruction_s
 {
 char *opcode;
-void (*f)(stack_t **stack, unsigned int line_number);
+void (*f)(stack_t **stack, unsigned int line_num);
 } instruction_t;
 
 extern global_t vglo;
 
 /* The opcode_instructuions*/
-void _push(stack_t **stack, unsigned int line_number);
-void _pall(stack_t **stack, unsigned int line_number);
+void _push(stack_t **stack, unsigned int line_num);
+void _pall(stack_t **stack, unsigned int line_num);
 void _pint(stack_t **doubly, unsigned int cline);
 void _pop(stack_t **doubly, unsigned int cline);
 void _swap(stack_t **doubly, unsigned int cline);
@@ -83,18 +83,18 @@ void _rotl(stack_t **doubly, unsigned int cline);
 void _rotr(stack_t **doubly, unsigned int cline);
 
 /*The get function*/
-void (*get_opcodes(char *opc))(stack_t **stack, unsigned int line_number);
+void (*get_opcodes(char *opcd))(stack_t **stack, unsigned int line_num);
 
 /*The imported functions*/
-int _sch(char *s, char c);
+int _sch(char *n, char s);
 char *_strtoky(char *s, char *d);
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
 void *_calloc(unsigned int nmemb, unsigned int size);
-int _strcmp(char *s1, char *s2);
+int _strcmp(char *n1, char *n2);
 
 /* The doubly linked list functions */
-stack_t *add_dnodeint_end(stack_t **head, const int n);
-stack_t *add_dnodeint(stack_t **head, const int n);
+stack_t *add_dnodeint_end(stack_t **head, const int m);
+stack_t *add_dnodeint(stack_t **head, const int m);
 void free_dlistint(stack_t *head);
 
 /* main function */
