@@ -6,7 +6,7 @@
  *@m: The data to store.
  *Return: A doubly linked list.
  */
-stack_t *add_dnodeint_end(stack_t **head, const int m)
+stack_t *add_dnodeint_end(stack_t **head, const int n)
 {
 	stack_t *tmp, *aux;
 
@@ -19,7 +19,7 @@ stack_t *add_dnodeint_end(stack_t **head, const int m)
 		free_vglo();
 		exit(EXIT_FAILURE);
 	}
-	tmp->m = m;
+	tmp->n = n;
 
 	if (*head == NULL)
 	{
@@ -43,7 +43,7 @@ stack_t *add_dnodeint_end(stack_t **head, const int m)
  *@m: The data to store.
  *Return: A doubly linked list.
  */
-stack_t *add_dnodeint(stack_t **head, const int m)
+stack_t *add_dnodeint(stack_t **head, const int n)
 {
 	stack_t *tmp;
 
@@ -56,7 +56,7 @@ stack_t *add_dnodeint(stack_t **head, const int m)
 		free_vglo();
 		exit(EXIT_FAILURE);
 	}
-	tmp->m = m;
+	tmp->n = n;
 
 	if (*head == NULL)
 	{

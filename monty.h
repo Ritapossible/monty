@@ -1,6 +1,7 @@
 #ifndef MONTY
 #define MONTY
 
+#define _GNU_SOURCE
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -93,8 +94,8 @@ void *_calloc(unsigned int nmemb, unsigned int size);
 int _strcmp(char *n1, char *n2);
 
 /* The doubly linked list functions */
-stack_t *add_dnodeint_end(stack_t **head, const int m);
-stack_t *add_dnodeint(stack_t **head, const int m);
+stack_t *add_dnodeint_end(stack_t **head, const int n);
+stack_t *add_dnodeint(stack_t **head, const int n);
 void free_dlistint(stack_t *head);
 
 /* main function */
