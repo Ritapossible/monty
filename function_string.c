@@ -11,7 +11,8 @@ int _strcmp(char *n1, char *n2)
 {
 int i;
 
-for (i = 0; n1[i] == n2[i] && n1[i]; i++);
+for (i = 0; n1[i] == n2[i] && n1[i]; i++)
+	;
 if (n1[i] > n2[i])
 return (1);
 if (n1[i] < n2[i])

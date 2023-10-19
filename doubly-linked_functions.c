@@ -3,7 +3,7 @@
 /**
  *add_dnodeint_end - This adds a note at the end of the doubly link list.
  *@head: The first position of linked list.
- *@m: The data to store.
+ *@n: The data to store.
  *Return: A doubly linked list.
  */
 stack_t *add_dnodeint_end(stack_t **head, const int n)
@@ -40,7 +40,7 @@ stack_t *add_dnodeint_end(stack_t **head, const int n)
 /**
  *add_dnodeint - This adds a note at the begining of the doubly link list.
  *@head: The first position of linked list.
- *@m: The data to store.
+ *@n: The data to store.
  *Return: A doubly linked list.
  */
 stack_t *add_dnodeint(stack_t **head, const int n)
